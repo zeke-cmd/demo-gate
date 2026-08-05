@@ -8,8 +8,7 @@
       "depends_on": { "nodes": ["model.demo.stg_customers"] },
       "columns": {
         "customer_id": { "name": "customer_id", "data_type": "integer" },
-        "email": { "name": "email", "data_type": "varchar" },
-        "customer_email": { "name": "customer_email", "data_type": "varchar" }
+        "email": { "name": "email", "data_type": "varchar" }
       }
     },
     "test.demo.not_null_customers_email": {
