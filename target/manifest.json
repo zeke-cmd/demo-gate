@@ -8,7 +8,18 @@
       "depends_on": { "nodes": ["model.demo.stg_customers"] },
       "columns": {
         "customer_id": { "name": "customer_id", "data_type": "integer" },
-        "email": { "name": "email", "data_type": "varchar" }
+        "email": { "name": "email", "data_type": "varchar" },
+        "customer_email": { "name": "customer_email", "data_type": "varchar" },
+        "status": { "name": "status", "data_type": "varchar" }
+      }
+    },
+    "model.demo.orders": {
+      "unique_id": "model.demo.orders",
+      "resource_type": "model",
+      "name": "orders",
+      "depends_on": { "nodes": ["model.demo.customers"] },
+      "columns": {
+        "order_id": { "name": "order_id", "data_type": "integer" }
       }
     },
     "test.demo.not_null_customers_email": {
