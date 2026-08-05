@@ -1,0 +1,6 @@
+policyVersion: v1.0.0
+failClosedOnUnresolved: true
+assetMappings:
+  - customers: urn:li:dataset:(urn:li:dataPlatform:dbt,demo.customers,PROD)
+ownerMappings:
+  - data-owners: puri-adityakumar
