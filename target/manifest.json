@@ -12,6 +12,19 @@
         "customer_email": { "name": "customer_email", "data_type": "varchar" }
       }
     },
+    "model.demo.orders": {
+      "unique_id": "model.demo.orders",
+      "resource_type": "model",
+      "name": "orders",
+      "depends_on": { "nodes": ["model.demo.stg_orders"] },
+      "columns": {
+        "order_id": { "name": "order_id", "data_type": "integer" },
+        "customer_id": { "name": "customer_id", "data_type": "integer" },
+        "order_date": { "name": "order_date", "data_type": "date" },
+        "order_status": { "name": "order_status", "data_type": "varchar" },
+        "order_total": { "name": "order_total", "data_type": "decimal(18,2)" }
+      }
+    },
     "test.demo.not_null_customers_email": {
       "unique_id": "test.demo.not_null_customers_email",
       "resource_type": "test",

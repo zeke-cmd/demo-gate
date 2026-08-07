@@ -2,5 +2,6 @@ policyVersion: v1.0.0
 failClosedOnUnresolved: true
 assetMappings:
   - customers: urn:li:dataset:(urn:li:dataPlatform:dbt,demo.customers,PROD)
+  - orders: urn:li:dataset:(urn:li:dataPlatform:snowflake,b2fd91.order_entry_db.order_entry.orders,PROD)
 ownerMappings:
-  - data-owners: puri-adityakumar
+  - data-owners: zeke-cmd
