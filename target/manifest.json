@@ -18,7 +18,6 @@
       "name": "orders",
       "depends_on": { "nodes": ["model.demo.stg_orders"] },
       "columns": {
-        "order_id": { "name": "order_id", "data_type": "integer" },
         "customer_id": { "name": "customer_id", "data_type": "integer" },
         "order_date": { "name": "order_date", "data_type": "date" },
         "order_status": { "name": "order_status", "data_type": "varchar" },
