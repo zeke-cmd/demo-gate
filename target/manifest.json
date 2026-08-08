@@ -16,7 +16,9 @@
       "unique_id": "model.demo.orders",
       "resource_type": "model",
       "name": "orders",
-      "depends_on": { "nodes": ["model.demo.stg_orders"] },
+      "depends_on": {
+        "nodes": ["model.demo.stg_orders", "model.demo.dim_customers"]
+      },
       "columns": {
         "order_id": { "name": "order_id", "data_type": "integer" },
         "legacy_order_key": { "name": "legacy_order_key", "data_type": "varchar" },
